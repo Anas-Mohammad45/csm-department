@@ -36,49 +36,6 @@ The system is designed for **early intervention**, helping healthcare profession
 | Explainability | SHAP, LIME |
 | Interface | GUI (Tkinter) |
 
----
-
-## 🏗️ System Architecture
-
-                    ┌───────────────────────────────┐
-            │        User Interface         │
-            │        (Tkinter GUI)          │
-            └───────────────┬───────────────┘
-                            │
-            ┌───────────────▼───────────────┐
-            │       Data Preprocessing      │
-            │   Cleaning + Normalization    │
-            └───────────────┬───────────────┘
-                            │
-            ┌───────────────▼───────────────┐
-            │     Feature Engineering       │
-            │  SMOTE + Feature Selection    │
-            └───────────────┬───────────────┘
-                            │
-        ┌───────────────┬───────────────┬───────────────┬───────────────┐
-        │               │               │               │
-        ▼               ▼               ▼               ▼
- Logistic Reg.        SVM             KNN        Random Forest
-                                               + XGBoost
-                            │
-                            ▼
-            ┌───────────────────────────────┐
-            │       Model Evaluation        │
-            │ Accuracy, Precision, Recall  │
-            └───────────────┬───────────────┘
-                            │
-                            ▼
-            ┌───────────────────────────────┐
-            │     Explainable AI (XAI)      │
-            │        SHAP & LIME            │
-            └───────────────┬───────────────┘
-                            │
-                            ▼
-                   Stroke Prediction Output
-
-
-
----
 
 ## 🤖 Machine Learning Models
 
